@@ -98,7 +98,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					}
 				}
 			</style>
-			</head>
+
+			<style>
+                html {
+                    scroll-behavior: smooth;
+            }
+            </style>
+</head>
 
 <body class="home wp-singular page-template-default page page-id-159 wp-theme-popularfx popularfx-body elementor-default elementor-kit-157 elementor-page elementor-page-159">
 <div id="page" class="site">
@@ -122,6 +128,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </ul>
 </li>
 <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-40"><a href="https://e-agronomist.tech#Vantagens" aria-current="page">Advantages</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-29"><a href="#comments-section" aria-current="page">Comments</a></li>
 <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-29"><a href="about_us.html" aria-current="page">About us</a></li>
 <li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-51"><a href="contacts.html" aria-current="page">Contacts</a></li>
 </ul></div>		</nav><!-- #site-navigation -->
@@ -809,10 +816,24 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</div><!-- .entry-content -->
 
 	</article><!-- #post-159 -->
+	
+	
+<section id="comments-section" style="max-width:600px;margin:auto;">
+  <h2>Leave a Comment</h2>
+  <form id="commentForm">
+    <input type="text" 
+	       id="name" 
+		   placeholder="Your username" 
+		   required style="width:100%; margin-bottom:8px;">
+    <textarea id="comment" 
+	          placeholder="Your comment" 
+			  required style="width:100%; margin-bottom:8px; resize:vertical; max-height:300px; min-height:60px;"></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+  <div id="commentsList" style="margin-top:20px;"></div>
+</section>
 
-	</main><!-- #main -->
-
-
+</main><!-- #main -->
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			Powered by Phosphorland ©		</div><!-- .site-info -->
