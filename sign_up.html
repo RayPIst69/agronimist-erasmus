@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="css/za_sign.css" />
+<title>Welcome!</title>
+</head>
+
+
+<body>
+   <div class="navbar">
+    <div class="nav-brand">
+    <h1>Sign up</h1>
+    <p>The Agronomist you need!</p>
+    </div>
+    <ul>
+        <li> <a href="agronomist.html">Home page</a></li>
+        <li> <a href="#"> Agro Tools  </a>
+            <ul class="dropdown"> 
+                <li><a href="#">E-Agronomist</a></li>
+                <li><a href="#">Aerial Data</a></li>
+                <li><a href="#">Weather Data</a></li>
+                <li><a href="#">Phorland</a></li>
+                <li><a href="#">Irrigation Systems</a></li>
+            </ul>
+        <li><a href="#">Advantages</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        </li>    
+
+    </ul>
+    </div>
+    
+    <p>To je sign up page, ne login, ne zamešat.</p><br>
+    <p>V IZDELOVANJU!!!</p>
+    <!-- Add these spans for error messages below each input -->
+    <form id="loginForm">
+        <input type="text" 
+               id="username" 
+               placeholder="Username"
+               style="margin-bottom:0; margin-top:40px;">
+        <span id="usernameError" 
+              style="color:red; display:none; font-size:13px;">Please enter your username.</span>
+        <input type="password" 
+               id="password" 
+               placeholder="Password"
+               style="margin-bottom:0; margin-top:10px;">
+        <span id="passwordError" 
+               style="color:red; display:none; font-size:13px;">Please enter your password.</span>
+    <button type="submit" style="margin-top:18px;">LOGIN</button>
+    <p style="margin-top:80px; margin-bottom: 0px">Don't have an account?</p>
+    <button type="button" class="btn_sign" onclick="window.location.href='sign_up.html'">SIGN UP</button>
+</form>
+
+    <script src="js/dod_sign.js"></script>
+</body>
+</html>
