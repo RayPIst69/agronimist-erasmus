@@ -1,0 +1,81 @@
+
+/* Navbar container */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d7f67;
+    padding: 0px 80px;
+    color: white;
+    height: 100px;
+}
+
+/* Branding section */
+.nav-brand h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.nav-brand p {
+    margin: 1px 0 0 0;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* Main navigation */
+.navbar > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* List items */
+.navbar li {
+    position: relative;
+}
+
+/* All links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    font-size: 17px;
+    transition: background 0.3s;
+    width: 110px;
+    text-align: center;
+}
+
+/* Dropdown menu - initially hidden */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #43aa8b;
+    min-width: 100%;
+    display: none;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Show dropdown on hover */
+.navbar li:hover > .dropdown {
+    display: block;
+}
+
+/* Hover effects */
+.navbar a:hover {
+    background: #286955;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 10px;
+    color: #2d7f67;
+    text-decoration: none;
+}

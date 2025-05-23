@@ -1,10 +1,11 @@
-/* Reset and base styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
+
 
 /* Navbar container */
 .navbar {
@@ -14,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #2d7f67;
-    padding: 0px 80px;
+    padding: 0px 5%;
     color: white;
     height: 100px;
 }
@@ -79,47 +80,90 @@ body {
     background: #286955;
 }
 
-/* Contact section styles */
-body > p {
-    margin: 20px 5%;
-}
-
-form {
-    margin: 20px 5%;
-    max-width: 500px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 120px;
-}
-
-button {
-    background-color: #2d7f67;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
 a {
     display: inline-block;
     padding: 10px;
     margin: 10px 10px;
     color: #2d7f67;
     text-decoration: none;
+}
+
+
+/* Slider container */
+.slider {
+  position: relative;
+  z-index: -1;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; /* Hides slides outside the container */
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth slide animation */
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  height: 500px;
+  object-fit: cover; /* Ensures images fill the space */
+}
+
+/* Caption styling */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots indicator (optional) */
+.dots {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active { background-color: #333; }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .slide img { height: 300px; }
 }
