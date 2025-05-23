@@ -8,76 +8,75 @@ body {
 
 /* Navbar container */
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2d7f67;
     padding: 0px 80px;
     color: white;
+    height: 100px;
 }
 
 /* Branding section */
 .nav-brand h1 {
     margin: 0;
-    font-size: 30px; /* Smaller heading */
+    font-size: 30px;
 }
 
 .nav-brand p {
     margin: 1px 0 0 0;
-    font-size: 17px; /* Smaller subtitle */
+    font-size: 17px;
     opacity: 0.9;
 }
 
-/* Navigation menu */
-.navbar ul {
+/* Main navigation */
+.navbar > ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
+/* List items */
 .navbar li {
     position: relative;
 }
 
-/* All links - consistent sizing */
+/* All links */
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 12px 15px; /* Consistent padding */
+    padding: 12px 15px;
     display: block;
-    font-size: 20px; /* Smaller font size */
+    font-size: 17px;
     transition: background 0.3s;
+    width: 110px;
+    text-align: center;
 }
 
-/* Dropdown menu */
+/* Dropdown menu - initially hidden */
 .dropdown {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     background-color: #43aa8b;
-    width:auto;
-    min-width: 100px; /* Smaller dropdown */
+    min-width: 100%;
     display: none;
-    z-index: 1;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
 }
 
-.dropdown li {
-    width: 100%;
-}
-
-.dropdown a {
-    padding: 10px 15px; /* Slightly smaller than main nav */
-    font-size: 20px; /* Smaller than main nav */
+/* Show dropdown on hover */
+.navbar li:hover > .dropdown {
+    display: block;
 }
 
 /* Hover effects */
 .navbar a:hover {
     background: #286955;
-}
-
-li:hover .dropdown {
-    display: block;
 }
 
 /* Contact section styles */
@@ -119,7 +118,8 @@ button {
 
 a {
     display: inline-block;
-    margin: 20px 5%;
+    padding: 10px;
+    margin: 10px 10px;
     color: #2d7f67;
     text-decoration: none;
 }
