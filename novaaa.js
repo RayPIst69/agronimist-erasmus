@@ -3,6 +3,9 @@ const slides = document.querySelector('.slides');
 const slideCount = document.querySelectorAll('.slide').length;
 const dotsContainer = document.querySelector('.dots');
 
+// Add event listeners for buttons
+
+
 // Create dots for navigation
 for (let i = 0; i < slideCount; i++) {
   const dot = document.createElement('span');
@@ -12,9 +15,9 @@ for (let i = 0; i < slideCount; i++) {
 }
 
 const dots = document.querySelectorAll('.dot');
-dots[0].classList.add('active');
+dots[0].classList.add('active'); // Highlight first dot
 
-// Navigation functions
+// Next/previous slide functions
 function nextSlide() {
   currentSlide = (currentSlide + 1) % slideCount;
   updateSlider();
@@ -30,6 +33,7 @@ function goToSlide(index) {
   updateSlider();
 }
 
+// Update slider position and dots
 function updateSlider() {
   slides.style.transform = `translateX(-${currentSlide * 100}%)`;
   dots.forEach((dot, i) => {
@@ -37,17 +41,19 @@ function updateSlider() {
   });
 }
 
-// Add event listeners for buttons
-document.querySelector('.prev').addEventListener('click', prevSlide);
-document.querySelector('.next').addEventListener('click', nextSlide);
-
-// Auto-slide and hover pause
+// Auto-slide every 5 seconds (optional)
 let slideInterval = setInterval(nextSlide, 5000);
+
+// Pause on hover (optional)
 slides.parentElement.addEventListener('mouseenter', () => clearInterval(slideInterval));
 slides.parentElement.addEventListener('mouseleave', () => {
   slideInterval = setInterval(nextSlide, 5000);
 });
 
+<<<<<<< HEAD
+document.querySelector('.prev').addEventListener('click', prevSlide);
+document.querySelector('.next').addEventListener('click', nextSlide);
+=======
 const commentBox = document.getElementById('comment');
 
 commentBox.addEventListener('input', function () {
@@ -192,3 +198,4 @@ document.getElementById('name').addEventListener('blur', function() {
 
 // Load comments on page load
 window.addEventListener('DOMContentLoaded', loadComments);
+>>>>>>> 93aab1408f99ae5d558a2ffb78f730ed081823cc
