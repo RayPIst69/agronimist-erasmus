@@ -22,12 +22,12 @@ body {
 /* Branding section */
 .nav-brand h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .nav-brand p {
     margin: 1px 0 0 0;
-    font-size: 17px;
+    font-size: 1vw;
     opacity: 0.9;
 }
 
@@ -50,9 +50,9 @@ body {
     text-decoration: none;
     padding: 12px 15px;
     display: block;
-    font-size: 17px;
+    font-size: 1.2vw;
     transition: background 0.3s;
-    width: 110px;
+    width: auto;
     text-align: center;
 }
 
