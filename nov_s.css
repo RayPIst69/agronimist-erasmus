@@ -46,6 +46,11 @@ body {
     position: relative;
 }
 
+.navbar a,
+.navbar a:visited {
+  color: white !important;
+}
+
 /* All links */
 .navbar a {
     color: white;
@@ -71,6 +76,15 @@ body {
     padding: 0;
 }
 
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+  background: #286955 !important;
+  color: white !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 /* Show dropdown on hover */
 .navbar li:hover > .dropdown {
     display: block;
@@ -79,6 +93,7 @@ body {
 /* Hover effects */
 .navbar a:hover {
     background: #286955;
+    color: white;
 }
 
 a {
@@ -169,3 +184,4 @@ a {
 @media (max-width: 768px) {
   .slide img { height: 300px; }
 }
+
