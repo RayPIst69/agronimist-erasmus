@@ -145,3 +145,9 @@ a {
     color: #2d7f67;
     text-decoration: none;
 }
+
+#usernameError {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
