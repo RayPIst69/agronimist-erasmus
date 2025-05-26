@@ -50,10 +50,10 @@ slides.parentElement.addEventListener('mouseleave', () => {
   slideInterval = setInterval(nextSlide, 5000);
 });
 
-<<<<<<< HEAD
+
 document.querySelector('.prev').addEventListener('click', prevSlide);
 document.querySelector('.next').addEventListener('click', nextSlide);
-=======
+
 const commentBox = document.getElementById('comment');
 
 commentBox.addEventListener('input', function () {
@@ -198,4 +198,4 @@ document.getElementById('name').addEventListener('blur', function() {
 
 // Load comments on page load
 window.addEventListener('DOMContentLoaded', loadComments);
->>>>>>> 93aab1408f99ae5d558a2ffb78f730ed081823cc
+
