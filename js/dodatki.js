@@ -1,5 +1,4 @@
 const commentBox = document.getElementById('comment');
-const maxLines = 25;
 
 commentBox.addEventListener('input', function () {
   const lines = commentBox.value.split('\n');
@@ -82,9 +81,23 @@ function deleteComment(id) {
 
 document.getElementById('commentForm').onsubmit = function(e) {
   e.preventDefault();
-  const name = document.getElementById('name').value.trim();
+  const nameInput = document.getElementById('name');
+  const name = nameInput.value.trim();
   const comment = document.getElementById('comment').value.trim();
-  if(name && comment) {
+  const errorElem = document.getElementById('nameError');
+
+  // Check for minimum length and valid characters
+  if (!name || name.length < 3) {
+    errorElem.textContent = 'Username must be at least 3 characters.';
+    nameInput.focus();
+    return;
+  }
+  if (/[^a-zA-Z0-9_-]/.test(name)) {
+    errorElem.textContent = 'Only letters, numbers, underscores and dashes are allowed.';
+    nameInput.focus();
+    return;
+  }
+  if (comment) {
     const id = generateId();
     const comments = JSON.parse(localStorage.getItem('comments') || '[]');
     comments.push({id, name, comment});
@@ -95,8 +108,37 @@ document.getElementById('commentForm').onsubmit = function(e) {
     localStorage.setItem('myComments', JSON.stringify(myComments));
     loadComments();
     this.reset();
+    errorElem.textContent = '';
   }
 };
+
+document.getElementById('name').addEventListener('input', function(e) {
+  const original = this.value;
+  const filtered = original.replace(/[^a-zA-Z0-9_-]/g, '');
+  this.value = filtered;
+  const errorElem = document.getElementById('nameError');
+
+  if (original !== filtered) {
+    errorElem.textContent = 'Only letters, numbers, underscores and dashes are allowed.';
+  } else if (filtered.length > 0 && filtered.length < 3) {
+    errorElem.textContent = 'Username must be at least 3 characters.';
+  } else {
+    errorElem.textContent = '';
+  }
+});
+
+document.getElementById('name').addEventListener('blur', function() {
+  const hasInvalidChars = /[^a-zA-Z0-9_-]/.test(this.value);
+  const errorElem = document.getElementById('nameError');
+  
+  if (hasInvalidChars) {
+    errorElem.textContent = 'Only letters, numbers, underscores, and dashes are allowed.';
+    this.classList.add('error-border');
+  } else {
+    errorElem.textContent = '';
+    this.classList.remove('error-border');
+  }
+});
 
 // Load comments on page load
 window.addEventListener('DOMContentLoaded', loadComments);

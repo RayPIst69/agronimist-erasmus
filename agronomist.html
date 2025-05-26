@@ -838,12 +838,17 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   <h2>Leave a Comment</h2>
   <form id="commentForm">
     <input type="text" 
-	       id="name" 
-		   placeholder="Your username" 
-		   required style="width:100%; margin-bottom:8px;">
+	       id="name"
+		   placeholder="Your username"
+		   minlength="3"
+		   maxlength="30"
+		   pattern="^[a-zA-Z0-9_-]+$"
+		   required style="width:100%;">
+	<span id="nameError" style="color:red; font-size:0.9em;"></span>	   
     <textarea id="comment" 
 	          placeholder="Your comment" 
-			  required style="width:100%; margin-bottom:8px; resize:vertical; max-height:300px; min-height:60px;"></textarea>
+			  maxlength="850"
+			  required style="width:100%; margin-top:8px; margin-bottom:8px; resize:vertical; max-height:300px; min-height:60px;"></textarea>
     <button type="submit">Post Comment</button>
   </form>
   <div id="commentsList" style="margin-top:20px;"></div>
