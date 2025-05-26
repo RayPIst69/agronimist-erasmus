@@ -12,9 +12,9 @@ for (let i = 0; i < slideCount; i++) {
 }
 
 const dots = document.querySelectorAll('.dot');
-dots[0].classList.add('active'); // Highlight first dot
+dots[0].classList.add('active');
 
-// Next/previous slide functions
+// Navigation functions
 function nextSlide() {
   currentSlide = (currentSlide + 1) % slideCount;
   updateSlider();
@@ -30,7 +30,6 @@ function goToSlide(index) {
   updateSlider();
 }
 
-// Update slider position and dots
 function updateSlider() {
   slides.style.transform = `translateX(-${currentSlide * 100}%)`;
   dots.forEach((dot, i) => {
@@ -38,10 +37,12 @@ function updateSlider() {
   });
 }
 
-// Auto-slide every 5 seconds (optional)
-let slideInterval = setInterval(nextSlide, 5000);
+// Add event listeners for buttons
+document.querySelector('.prev').addEventListener('click', prevSlide);
+document.querySelector('.next').addEventListener('click', nextSlide);
 
-// Pause on hover (optional)
+// Auto-slide and hover pause
+let slideInterval = setInterval(nextSlide, 5000);
 slides.parentElement.addEventListener('mouseenter', () => clearInterval(slideInterval));
 slides.parentElement.addEventListener('mouseleave', () => {
   slideInterval = setInterval(nextSlide, 5000);
