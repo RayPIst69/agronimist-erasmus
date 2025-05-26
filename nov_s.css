@@ -185,3 +185,24 @@ a {
   .slide img { height: 300px; }
 }
 
+
+.side-square {
+  position: absolute;
+  top: 15%;
+  width: 270px;
+  height: 450px;
+  background-color: #1c4e3f;
+  z-index: 1;
+}
+
+.left-square {
+  left: -50px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 20px 5%;
+}
+
+.right-square {
+  right: -50px;
+  border-radius: 15px 15px 15px 15px;
+  margin: 20px 5%;
+}
