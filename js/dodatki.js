@@ -1,4 +1,3 @@
-
 const commentBox = document.getElementById('comment');
 const maxLines = 25;
 
