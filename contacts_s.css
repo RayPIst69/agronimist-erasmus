@@ -169,11 +169,10 @@ a {
 
 .contact-container::before {
   content: "";
-  padding: 40px 0;
+  padding: 300px 0;
   position: absolute;
   left: 45%;
-  top: 20%;
-  bottom: 8%;
+  top: 10%;
   width: 2px;
   background: linear-gradient(to bottom, 
     rgba(65, 185, 149, 0.273), 
