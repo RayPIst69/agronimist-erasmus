@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="nov_s.css">
+    <link rel="stylesheet" href="https://e-agronomist.tech/wp-content/themes/popularfx/style.css">
+    <link rel="stylesheet" href="https://e-agronomist.tech/wp-content/plugins/elementor/assets/css/frontend.min.css">
+    
+    <title>Home page - E-Agronomist</title>
+</head>
+
+<body>
+    
+<div class="navbar">
+    <div class="nav-brand">
+    <h1>Home page</h1>
+    <p>The Agronomist you need!</p>
+    </div>
+    <ul>
+        <li> <a href="agronomist.html">Home page</a></li>
+        <li> <a href="#"> Agro Tools  </a>
+            <ul class="dropdown"> 
+                <li><a href="#">E-Agronomist</a></li>
+                <li><a href="#">Aerial Data</a></li>
+                <li><a href="#">Weather Data</a></li>
+                <li><a href="#">Phorland</a></li>
+                <li><a href="#">Irrigation Systems</a></li>
+            </ul>
+        <li><a href="#">Advantages</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        </li>    
+
+    </ul>
+    </div>
+    <br>
+
+    <div class="slider">
+        
+        <div class="slides">
+          <div class="slide">
+            <img src="https://media.istockphoto.com/id/186623772/pt/foto/tuscan-paisagem.jpg?s=612x612&w=0&k=20&c=9-xwZTa1ZP-ccFdyJXBBIrPZCMqOtn0x315gW5Yqt9Y=" alt="Field Research">
+            <div class="caption">words</div>
+        </div>
+        <div class="slide">
+            <img src="https://preview.redd.it/noob-is-an-awful-tutorial-character-read-desc-v0-ir3fdbpe2ute1.png?auto=webp&s=84ad07f055650dc4f9ba4fd4a5f9fae3ab224703" alt="Soil Testing">
+            <div class="caption">words</div>
+        </div>
+        <div class="slide">
+            <img src="images/farm-training.jpg" alt="words">
+            <div class="caption">words</div>
+        </div>
+
+    </div>
+    <!-- Navigation buttons -->
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+    <!-- Dots indicator (optional) -->
+    <div class="dots"></div>
+
+  </div>
+ 
+  <div class="side-square left-square"></div>
+  <div class="side-square right-square"></div>
+
+
+
+
+
+
+
+<section id="comments-section" style="max-width:600px;margin:auto;">
+  <h2>Leave a Comment</h2>
+  <form id="commentForm">
+    <input type="text" 
+	       id="name"
+		   placeholder="Your username"
+		   minlength="3"
+		   maxlength="30"
+		   pattern="^[a-zA-Z0-9_-]+$"
+		   required style="width:100%;">
+	<span id="nameError" style="color:red; font-size:0.9em;"></span>	   
+    <textarea id="comment" 
+	          placeholder="Your comment" 
+			  maxlength="850"
+			  required style="width:100%; margin-top:8px; margin-bottom:8px; resize:vertical; max-height:300px; min-height:60px;"></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+  <div id="commentsList" style="margin-top:20px;"></div>
+</section>
+
+<script src="novaaa.js"></script>
+
+</body>

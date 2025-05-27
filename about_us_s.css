@@ -1,3 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
 /* Navbar container */
 .navbar {
@@ -15,12 +21,12 @@
 /* Branding section */
 .nav-brand h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .nav-brand p {
     margin: 1px 0 0 0;
-    font-size: 17px;
+    font-size: 1vw;
     opacity: 0.9;
 }
 
@@ -43,9 +49,9 @@
     text-decoration: none;
     padding: 12px 15px;
     display: block;
-    font-size: 17px;
+    font-size: 1.2vw;
     transition: background 0.3s;
-    width: 110px;
+    width: auto;
     text-align: center;
 }
 
@@ -70,12 +76,4 @@
 /* Hover effects */
 .navbar a:hover {
     background: #286955;
-}
-
-a {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px 10px;
-    color: #2d7f67;
-    text-decoration: none;
 }

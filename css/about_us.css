@@ -8,17 +8,17 @@
 
     /* Navbar */
     .navbar {
-        position: relative;
+        position: sticky;
         top: 0;
         display: flex;
+        z-index: 100;
         justify-content: space-between;
         align-items: center;
         background-color: #2d7f67;
-        padding: 0px 80px;
+        padding: 0px 5%;
         color: white;
         height: 100px;
-        z-index: 10;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
     }
 
     .nav-brand h1 {
@@ -28,7 +28,7 @@
 
     .nav-brand p {
         margin: 1px 0 0 0;
-        font-size: 17px;
+        font-size: 1w;
         opacity: 0.9;
     }
 
@@ -43,6 +43,11 @@
     .navbar li {
         position: relative;
     }
+    .navbar a,
+    .navbar a:visited {
+        color: white !important;
+    }
+
 
     /* All links */
     .navbar a {
@@ -50,9 +55,9 @@
         text-decoration: none;
         padding: 12px 15px;
         display: block;
-        font-size: 17px;
+        font-size: 1.2vw;
         transition: background 0.3s;
-        width: 110px;
+        width: auto;
         text-align: center;
     }
 
@@ -69,6 +74,15 @@
         padding: 0;
     }
 
+    .navbar a:hover,
+    .navbar a:focus,
+    .navbar a:active {
+        background: #286955 !important;
+        color: white !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
     /* Show dropdown on hover */
     .navbar li:hover >.dropdown {
         display: block;
@@ -77,10 +91,7 @@
     /* Hover effects */
     .navbar a:hover {
         background: #286955;
-    }
-
-    body > p {
-        margin: 20px 5%;
+        color: white;
     }
 
     a {
@@ -90,7 +101,7 @@
         color: #7f572d;
         text-decoration: none;
     }
-    /* Hamburger Menu */
+    /*Hamburger Menu */
     .hamburger {
         display: none;
         font-size: 1.5rem;
