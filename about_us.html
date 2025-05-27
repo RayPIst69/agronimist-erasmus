@@ -1,22 +1,98 @@
 <!doctype html>
 <html lang="pt-PT">
-
 <head>
-    <meta charset="UTF-8">
-    <title>About Us- E-Agronomist</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/about_us.css" />
 
- 
-    <div>
-    <p>We’re on a mission to radically augment decision-making. Although E-Agronomist is in early development, the product road map is already long and kaleidoscopic. We have a distinct vision for integrating best practices.</p>        
-    <p>The future isn’t humans versus machines. It’s humans plus machines producing augmented intelligence.
-            E-Agronomist is on the cutting edge of combining human knowledge with the debiasing power of machines. Our goal is to empower people rather than make them obsolete!</p>
-    </div>
+<title>About Us - E-Agronomist</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>About Us</h1>
+                <p>The Agronomist you need!</p>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown-parent">
+                    <a href="#" aria-haspopup="true">Agro Tools</a>
+                    <ul class="dropdown">
+                        <li><a href="#">E-Agronomist</a></li>
+                        <li><a href="#">Aerial Data</a></li>
+                        <li><a href="#">Weather Data</a></li>
+                        <li><a href="#">Phorland</a></li>
+                        <li><a href="#">Irrigation Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="#advantages">Advantages</a></li>
+                <li><a href="#about" aria-current="page">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <h1>Empowering Farmers with Data-Driven Solutions</h1>
+                <p>Our mission is to help people see data in new ways, discover insights, and unlock endless possibilities in agriculture.</p>
+            </div>
+        </section>
 
+        <section class="mission fade-in">
+            <h2>Our Vision</h2>
+            <p>The future isn’t humans versus machines—it’s humans plus machines producing augmented intelligence. E-Agronomist combines cutting-edge technology with agricultural expertise to empower farmers. We provide tools for precision farming, leveraging aerial data, weather insights, and irrigation systems to boost yields and sustainability. Our goal is to make farming smarter, not harder, ensuring a greener future for all.</p>
+        </section>
 
-    <br> <a href="agronomist.html">Back to home page</a>
+        <section class="team fade-in">
+            <h2>Images</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="slike/slika1.png" alt="ena">
+                    <h3>Image one</h3>
+                    <p>text</p>
+                </div>
+                <div class="team-card">
+                    <img src="slike/slika2.png" alt="dve">
+                    <h3>Image Two</h3>
+                    <p>text</p>
+                </div>
+                <div class="team-card">
+                    <img src="slike/slika3.png" alt="tri">
+                    <h3>Image Three</h3>
+                    <p>text</p>
+                </div>
+            </div>
+        </section>
 
-
+        <section class="testimonials fade-in">
+            <h2>What Our Clients Say</h2>
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <p>"E-Agronomist transformed our farm's productivity with real-time data insights. Their tools are a game-changer!"</p>
+                        <h4>— Maria F., Farmer</h4>
+                    </div>
+                    <div class="slide">
+                        <p>"The irrigation system recommendations saved us water and increased our yield by 20%. Highly recommend!"</p>
+                        <h4>— Carlos R., Agricultural Manager</h4>
+                    </div>
+                    <div class="slide">
+                        <p>"Their aerial data helped us identify crop stress early, saving thousands in losses."</p>
+                        <h4>— Emma L., Vineyard Owner</h4>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button id="prev">❮</button>
+                    <button id="next">❯</button>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+    </main>
+    <script src="js/about_us.js"></script>
 </body>
-
+</html>
