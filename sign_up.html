@@ -65,6 +65,16 @@
             style="margin-bottom:0; margin-top:20px;">
         <span id="emailError" style="color:red; display:none; font-size:13px;">E-mail required.</span>
     </div>
+    <div class="input-group">
+            <input type="text" 
+                id="username" 
+                placeholder="Username"
+                minlength="3"
+                maxlength="30"
+                pattern="^[a-zA-Z0-9_-]+$"
+                style="margin-bottom:0; margin-top:20px;">
+            <span id="usernameError" style="color:red; display:none; font-size:13px;">Please input your username.</span>
+        </div>
     <div class="input-group" style="position:relative;">
         <input type="password" 
             id="password" 
@@ -87,6 +97,7 @@
     <button type="submit" style="display:block; margin:24px auto 0 auto; width:40%; max-width:220px;">SIGN UP</button>
 </form>
 </div>
+<div style="height: 20px;"></div>
 
     <script src="js/dod_sign.js"></script>
 </body>

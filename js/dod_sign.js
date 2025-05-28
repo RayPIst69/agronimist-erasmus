@@ -41,6 +41,19 @@ document.getElementById('loginForm').onsubmit = function(e) {
         lastnameError.style.display = 'block';
         valid = false;
     }
+    // Username required and pattern check
+const usernamePattern = /^[a-zA-Z0-9_-]+$/;
+if (!username.value.trim()) {
+    username.style.outline = '2px solid red';
+    usernameError.textContent = 'Username required.';
+    usernameError.style.display = 'block';
+    valid = false;
+} else if (!usernamePattern.test(username.value.trim())) {
+    username.style.outline = '2px solid red';
+    usernameError.textContent = 'Only letters, numbers, _ and - are allowed.';
+    usernameError.style.display = 'block';
+    valid = false;
+}
     // Email required
     if (!email.value.trim()) {
         email.style.outline = '2px solid red';
@@ -93,6 +106,11 @@ document.getElementById('firstname').addEventListener('input', function() {
 document.getElementById('lastname').addEventListener('input', function() {
     this.style.outline = '';
     document.getElementById('lastnameError').style.display = 'none';
+});
+document.getElementById('username').addEventListener('input', function() {
+    this.value = this.value.replace(/[^a-zA-Z0-9_-]/g, '');
+    this.style.outline = '';
+    document.getElementById('usernameError').style.display = 'none';
 });
 document.getElementById('email').addEventListener('input', function() {
     this.style.outline = '';
