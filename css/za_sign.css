@@ -4,11 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: url('../uwu.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Navbar container */
 .navbar {
-    position: sticky;
+    z-index: 2000;
+    position: relative; /* ensure stacking context */
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -117,25 +120,7 @@ button {
 }
 
 button:hover {
-    background-color: #225948;
-}
-
-
-.btn_sign {
-    background-color: #a2a338;
-    color: #ffffff;             
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: auto;      
-    display: inline-block;
-    transition: background 0.2s;
-}
-
-.btn_sign:hover {
-    background-color: #cbcd4c;
-    color: #595a1a;
+    background-color: #4fb192;
 }
 
 a {
@@ -144,4 +129,67 @@ a {
     margin: 10px 10px;
     color: #2d7f67;
     text-decoration: none;
+}
+
+.row {
+  display: flex;
+  gap: 20px; /* space between inputs */
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-group input[type="password"] {
+  padding-right: 40px; /* space for the eye button */
+}
+
+#togglePassword {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2d7f67;
+  z-index: 2;
+}
+
+#passwordError, .input-error {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  color: red;
+  font-size: 13px;
+  display: none;
+  max-width: 80%;
+  white-space: normal;
+  z-index: 3;
+}
+
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* optional: for vertical centering */
+  margin: 20px auto 0 auto;   /* auto left/right centers the box */
+  background-color: #27594a;
+  padding: 10px 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(45,127,103,0.08);
+  max-width: 500px;           /* set your desired width */
+  width: 100%;                /* responsive: shrink on small screens */
+}
+
+.navbar ul,
+.navbar li,
+.dropdown,
+.dropdown li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
