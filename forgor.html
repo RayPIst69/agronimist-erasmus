@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
  <link rel="stylesheet" href="css/za_for.css" />
-<title>New password</title>
+<title>Reset password</title>
 </head>
 
 
 <body>
    <div class="navbar">
     <div class="nav-brand">
-    <h1>New password</h1>
+    <h1>Reset password</h1>
     <p>The Agronomist you need!</p>
     </div>
     <ul>
@@ -35,27 +35,8 @@
 <!-- Add these spans for error messages below each input -->
 <div class="center-form">
     <img src="eagro.png" alt="E-agronomist" style="width:420px; margin-bottom:5px; display:block; margin-left:auto; margin-right:auto;">
+    <p style="color:#ffffffe5; max-width:320px; margin:0 auto 16px auto; text-align:center;">To reset your password, enter the email which is associated with your account.</p>
 <form id="loginForm">
-    <div class="row">
-        <div class="input-group">
-            <input type="text" 
-                id="firstname" 
-                placeholder="First Name"
-                maxlength="64"
-                pattern="^[A-Za-zÀ-ÿ\s\-]+$"
-                style="margin-bottom:0; margin-top:20px;">
-            <span id="firstnameError" style="color:red; display:none; font-size:13px;">First name required.</span>
-        </div>
-        <div class="input-group">
-            <input type="text" 
-                id="lastname" 
-                placeholder="Last Name"
-                maxlength="64"
-                pattern="^[A-Za-zÀ-ÿ\s\-]+$"
-                style="margin-bottom:0; margin-top:20px;">
-            <span id="lastnameError" style="color:red; display:none; font-size:13px;">Last name required.</span>
-        </div>
-    </div>
     <div class="input-group">
         <input type="email" 
             id="email" 
@@ -65,36 +46,7 @@
             style="margin-bottom:0; margin-top:20px;">
         <span id="emailError" style="color:red; display:none; font-size:13px;">E-mail required.</span>
     </div>
-    <div class="input-group">
-            <input type="text" 
-                id="username" 
-                placeholder="Username"
-                minlength="3"
-                maxlength="30"
-                pattern="^[a-zA-Z0-9_-]+$"
-                style="margin-bottom:0; margin-top:20px;">
-            <span id="usernameError" style="color:red; display:none; font-size:13px;">Please input your username.</span>
-        </div>
-    <div class="input-group" style="position:relative;">
-        <input type="password" 
-            id="password" 
-            placeholder="Password"
-            minlength="8"
-		    maxlength="64"
-            style="margin-bottom:0; margin-top:20px; padding-right:40px;">
-        <button type="button" id="togglePassword" style="position:absolute; right:8px; top:25px; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:#2d7f67;">👁️</button>
-        <span id="passwordError" style="color:red; display:none; font-size:13px; position: relative;">Password required.</span>
-    </div>
-    <div class="input-group">
-        <input type="password" 
-            id="passcheck" 
-            placeholder="Password Check"
-            minlength="8"
-		    maxlength="64"
-            style="margin-bottom:0; margin-top:20px;">
-        <span id="passcheckError" style="color:red; display:none; font-size:13px;">Please repeat your password.</span>
-    </div>
-    <button type="submit" style="display:block; margin:24px auto 0 auto; width:40%; max-width:220px;">SIGN UP</button>
+    <button type="submit" style="display:block; margin:24px auto 0 auto; width:57%; max-width:300px;">CONTINUE</button>
 </form>
 </div>
 <div style="height: 20px;"></div>

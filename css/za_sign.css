@@ -177,8 +177,7 @@ a {
   align-items: center;
   justify-content: center; /* optional: for vertical centering */
   margin: 20px auto 0 auto;   /* auto left/right centers the box */
-  background-color: #27594a;
-  padding: 10px 24px;
+  background-color: rgba(39, 89, 74, 0.9);
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(45,127,103,0.08);
   max-width: 500px;           /* set your desired width */
