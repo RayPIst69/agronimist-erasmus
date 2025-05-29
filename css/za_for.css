@@ -143,34 +143,6 @@ a {
   flex: 1;
 }
 
-.input-group input[type="password"] {
-  padding-right: 40px; /* space for the eye button */
-}
-
-#togglePassword {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #2d7f67;
-  z-index: 2;
-}
-
-#passwordError, .input-error {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  color: red;
-  font-size: 13px;
-  display: none;
-  max-width: 80%;
-  white-space: normal;
-  z-index: 3;
-}
-
 .center-form {
   display: flex;
   flex-direction: column;
@@ -178,6 +150,7 @@ a {
   justify-content: center; /* optional: for vertical centering */
   margin: 20px auto 0 auto;   /* auto left/right centers the box */
   background-color: rgba(39, 89, 74, 0.9);
+  padding: 10px 24px;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(45,127,103,0.08);
   max-width: 500px;           /* set your desired width */

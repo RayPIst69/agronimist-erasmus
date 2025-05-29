@@ -59,6 +59,13 @@ document.querySelector('.prev').addEventListener('click', prevSlide);
 document.querySelector('.next').addEventListener('click', nextSlide);
 
 
+
+document.querySelector('.prev').addEventListener('click', prevSlide);
+document.querySelector('.next').addEventListener('click', nextSlide);
+
+
+
+
 const commentBox = document.getElementById('comment');
 
 commentBox.addEventListener('input', function () {

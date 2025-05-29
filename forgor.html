@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="css/za_for.css" />
+<title>Reset password</title>
+</head>
+
+
+<body>
+   <div class="navbar">
+    <div class="nav-brand">
+    <h1>Reset password</h1>
+    <p>The Agronomist you need!</p>
+    </div>
+    <ul>
+        <li> <a href="nov.html">Home page</a></li>
+        <li> <a href="#"> Agro Tools  </a>
+            <ul class="dropdown"> 
+                <li><a href="#">E-Agronomist</a></li>
+                <li><a href="#">Aerial Data</a></li>
+                <li><a href="#">Weather Data</a></li>
+                <li><a href="#">Phorland</a></li>
+                <li><a href="#">Irrigation Systems</a></li>
+            </ul>
+        <li><a href="#">Advantages</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        </li>    
+
+    </ul>
+    </div>
+    
+<!-- Add these spans for error messages below each input -->
+<div class="center-form">
+    <img src="eagro.png" alt="E-agronomist" style="width:420px; margin-bottom:5px; display:block; margin-left:auto; margin-right:auto;">
+    <p style="color:#ffffffe5; max-width:320px; margin:0 auto 16px auto; text-align:center;">To reset your password, enter the email which is associated with your account.</p>
+<form id="loginForm">
+    <div class="input-group">
+        <input type="email" 
+            id="email" 
+            placeholder="E-mail"
+            maxlength="64"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            style="margin-bottom:0; margin-top:20px;">
+        <span id="emailError" style="color:red; display:none; font-size:13px;">E-mail required.</span>
+    </div>
+    <button type="submit" style="display:block; margin:24px auto 0 auto; width:57%; max-width:300px;">CONTINUE</button>
+</form>
+</div>
+<div style="height: 20px;"></div>
+
+    <script src="js/dod_for.js"></script>
+</body>
+</html>
