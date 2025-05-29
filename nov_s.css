@@ -199,3 +199,11 @@ a {
   .slide img { height: 300px; }
 }
 
+.navbar ul,
+.navbar li,
+.dropdown,
+.dropdown li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
