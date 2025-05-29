@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="css/za_frsh.css" />
+<title>Reset password</title>
+</head>
+
+
+<body>
+   <div class="navbar">
+    <div class="nav-brand">
+    <h1>Reset password</h1>
+    <p>The Agronomist you need!</p>
+    </div>
+    <ul>
+        <li> <a href="nov.html">Home page</a></li>
+        <li> <a href="#"> Agro Tools  </a>
+            <ul class="dropdown"> 
+                <li><a href="#">E-Agronomist</a></li>
+                <li><a href="#">Aerial Data</a></li>
+                <li><a href="#">Weather Data</a></li>
+                <li><a href="#">Phorland</a></li>
+                <li><a href="#">Irrigation Systems</a></li>
+            </ul>
+        <li><a href="#">Advantages</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        </li>    
+
+    </ul>
+    </div>
+    
+<!-- Add these spans for error messages below each input -->
+<div class="center-form">
+    <img src="eagro.png" alt="E-agronomist" style="width:420px; margin-bottom:5px; display:block; margin-left:auto; margin-right:auto;">
+<form id="loginForm">
+    <p style="color:#ffffffe5; max-width:320px; margin:0 auto 16px auto; text-align:center;">Please input the 6-digit code.</p>
+    <div class="code-input-group">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+        <input type="text" maxlength="1" pattern="[0-9]" class="code-box" inputmode="numeric" autocomplete="one-time-code">
+    </div>
+    <span id="codeError" style="color:red; display:none; font-size:13px; text-align:center; display:block;">Please enter the 6-digit code.</span>
+    <div id="timer" style="color:#fff; text-align:center; font-size:1.1em; margin:10px 0 6px 0;">Time left: 01:00</div>
+    <span id="timeoutMsg" style="display:none; color:red; text-align:center; font-size:1em;">Time has run out! Redirecting...</span>
+    <div class="input-group">
+        <p style="color:#ffffffe5; max-width:320px; margin:0 auto 16px auto; text-align:center; margin-top: 20px">Please input your new password.</p>
+        <input type="password"
+               id="password"
+               placeholder="Password"
+               minlength="8"
+               maxlength="64"
+               style="margin-bottom:0; margin-top:-5px;">
+        <button type="button" id="togglePassword"
+        style="position:absolute; right:8px; top:63px; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:#2d7f67;">👁️</button>       
+        <span id="passwordError" style="color:red; display:none; font-size:13px;">Password required.</span>
+    </div>
+    <button type="submit" style="display:block; margin:24px auto 0 auto; width:57%; max-width:300px;">CONTINUE</button>
+</form>
+</div>
+<div style="height: 20px;"></div>
+
+    <script src="js/dod_frsh.js"></script>
+</body>
+</html>

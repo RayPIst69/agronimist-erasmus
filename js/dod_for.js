@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // If valid, you can proceed with your logic here
         if (valid) {
-            // e.g., send reset email, show success message, etc.
+            window.location.href = 'fresh.html';
         }
     };
 
