@@ -34,14 +34,6 @@ body {
     opacity: 0.9;
 }
 
-/* Main navigation */
-.navbar > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
 /* List items */
 .navbar li {
     position: relative;
@@ -59,23 +51,6 @@ body {
     text-align: center;
 }
 
-/* Dropdown menu - initially hidden */
-.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #43aa8b;
-    min-width: 100%;
-    display: none;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
-}
-
-/* Show dropdown on hover */
-.navbar li:hover > .dropdown {
-    display: block;
-}
 
 /* Hover effects */
 .navbar a:hover {
