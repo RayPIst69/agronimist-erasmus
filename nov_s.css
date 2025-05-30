@@ -149,7 +149,7 @@ a {
 .caption {
   position: absolute;
   left: 100px;
-  top: 40px;
+  top: 130px;
   text-shadow:2px 2px 2px rgb(110, 105, 105);
   font-weight: bold;
   right: 0;
@@ -157,6 +157,15 @@ a {
   color: white;
   padding: 10px;
 }
+
+.caption > p{
+font-size: 40px;
+left: 110px;
+font-weight: normal;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
 
 /* Navigation buttons */
 .prev, .next {
