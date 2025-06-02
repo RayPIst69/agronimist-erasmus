@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="css/za_pro.css" />
+<title>Profile</title>
+</head>
+
+
+<body>
+   
+   <div class="navbar">
+    <div class="nav-brand">
+    <h1>My Account</h1>
+    <p>The Agronomist you need!</p>
+    </div>
+    <ul>
+        <li> <a href="nov.html">Home page</a></li>
+        <li> <a href="#"> Agro Tools  </a>
+            <ul class="dropdown"> 
+                <li><a href="#">E-Agronomist</a></li>
+                <li><a href="#">Aerial Data</a></li>
+                <li><a href="#">Weather Data</a></li>
+                <li><a href="https://phorland.pt/landing">Phorland</a></li>
+                <li><a href="#">Irrigation Systems</a></li>
+            </ul>
+        <li><a href="#">Advantages</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        </li>    
+
+    </ul>
+    </div>
+    
+    <div class="profile-container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img id="profilePic" src="def_pfp.png">
+                <input type="file" id="profileUpload" accept="image/*" style="display:none;">
+                <button id="editProfilePic">Edit Picture</button>
+                <button id="logoutBtn" class="profile-action-btn" style="margin-top:50px;">Logout</button>
+    <button id="deleteAccountBtn" class="profile-action-btn delete">Delete Account</button>
+            </div>
+            <div class="profile-info-card">
+                <div class="profile-field">
+                    <span class="field-label">First Name:</span>
+                    <span class="field-value" id="firstNameValue">John</span>
+                    <input class="field-input" id="firstNameInput" type="text" style="display:none;" minlength="2" maxlength="32">
+                    <button class="edit-btn" data-field="firstName">Edit</button>
+                    <button class="save-btn" data-field="firstName" style="display:none;">Save</button>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Last Name:</span>
+                    <span class="field-value" id="lastNameValue">Doe</span>
+                    <input class="field-input" id="lastNameInput" type="text" style="display:none;" minlength="2" maxlength="3">
+                    <button class="edit-btn" data-field="lastName">Edit</button>
+                    <button class="save-btn" data-field="lastName" style="display:none;">Save</button>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Username:</span>
+                    <span class="field-value" id="usernameValue">johndoe</span>
+                    <input class="field-input" id="usernameInput" type="text" style="display:none;">
+                    <button class="edit-btn" data-field="username">Edit</button>
+                    <button class="save-btn" data-field="username" style="display:none;">Save</button>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Email:</span>
+                    <span class="field-value" id="emailValue">john@example.com</span>
+                    <input class="field-input" id="emailInput" type="email" style="display:none;" maxlength="64"> <!--sends confirmation on mail-->
+                    <button class="edit-btn" data-field="email">Edit</button>
+                    <button class="save-btn" data-field="email" style="display:none;">Save</button>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Password:</span>
+                    <span class="field-value" id="passwordValue">********</span>
+                    <input class="field-input" id="passwordInput" type="password" style="display:none;">
+                    <button class="edit-btn" data-field="password">Edit</button>
+                    <button class="save-btn" data-field="password" style="display:none;">Save</button>
+                </div>
+                <div class="profile-field">
+                    <span class="field-label">Created:</span>
+                    <span class="field-value" id="createdValue">2024-06-02</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="js/dod_pro.js"></script>
+</body>
+</html>
